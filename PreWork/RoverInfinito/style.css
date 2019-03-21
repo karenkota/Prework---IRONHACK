@@ -1,0 +1,41 @@
+.fundo {
+    background-image: url("./Images/map.jpg");
+    width: 550px;
+    height: 550px;
+}
+
+.celulas {
+    width: 50px;
+    height: 40px;
+}
+
+.rover {
+    width: 40px;
+    height: 35px;
+}
+
+/* #board-container {
+    display: grid;
+    grid-template-areas: {
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+        ["x","x","x","x","x","x","x","x","x","x"];
+    };
+    grid-template-columns: 50px;
+    grid-template-rows: 50px;
+    column: repeat auto;
+    rows: repeat auto;
+    margin: auto;   
+} 
+.cell {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 4rem;
+} */

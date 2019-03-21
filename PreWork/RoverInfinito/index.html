@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mars Rover</title>
+  <link rel="shortcut icon" type="image/png" href="Images/logoNasa.png" />
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <!-- create MARS! -->
+    
+  <table align="center">
+    <tr>
+      <td></td>
+      <td align="center"><img src="./Images/dirNorth.png" onclick="North();" width="50px" height="50px"></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <img class=btn1 src="./Images/dirWest.png" onclick ="West();"width="50px" height="50px">
+      </td>
+      <td>
+       <table class=fundo id="board" border=1px>
+        <tr align="center">
+          <!-- reduzir tam. imagens -->
+          <td class="celulas" id="cel1" ></td>
+          <td class="celulas" id="cel2" ></td>
+          <td class="celulas" id="cel3" ></td>
+          <td class="celulas" id="cel4" ></td>
+          <td class="celulas" id="cel5" ></td>
+          <td class="celulas" id="cel6" ></td>
+          <td class="celulas" id="cel7" ></td>
+          <td class="celulas" id="cel8" ></td>
+          <td class="celulas" id="cel9" ></td>
+          <td class="celulas" id="cel10" ></td>
+        </tr>
+        <tr class="celulas" align="center">
+          <td id="cel11" ></td>
+          <td id="cel12" ></td>
+          <td id="cel13" ></td>
+          <td id="cel14" ></td>
+          <td id="cel15" ></td>
+          <td id="cel16" ></td>
+          <td id="cel17" ></td>
+          <td id="cel18" ></td>
+          <td id="cel19" ></td>
+          <td id="cel20" ></td>
+        </tr>
+        <tr class="celulas" align="center">
+          <td id="cel21" ></td>
+          <td id="cel22" ></td>
+          <td id="cel23" ></td>
+          <td id="cel24" ><img class="hole" width=80px src="./Images/black-hole.png"></td>
+          <td id="cel25" ></td>
+          <td id="cel26" ></td>
+          <td id="cel27" ></td>
+          <td id="cel28" ></td>
+          <td id="cel29" ></td>
+          <td id="cel30" ></td>
+        </tr>
+        <tr class="celulas" align="center">
+          <td id="cel31" ></td>
+          <td id="cel32" ></td>
+          <td id="cel33" ><img class="ET" width=60px src="./Images/ET.png"></td>
+          <td id="cel34" ></td>
+          <td id="cel35" ></td>
+          <td id="cel36" ></td>
+          <td id="cel37" ></td>
+          <td id="cel38" ></td>
+          <td id="cel39" ></td>
+          <td id="cel40" ></td>
+        </tr>
+        <tr class="celulas" align="center">
+          <td id="cel41" ></td>
+          <td id="cel42" ></td>
+          <td id="cel43" ></td>
+          <td id="cel44" ></td>
+          <td id="cel45" ><img class="rover" src="./Images/rover.png"></td>
+          <td id="cel46" ></td>
+          <td id="cel47" ></td>
+          <td id="cel48" ></td>
+          <td id="cel49" ></td>
+          <td id="cel50" ></td>
+        </tr>
+        <tr class="celulas" align="center">
+          <td id="cel51" ></td>
+          <td id="cel52" ></td>
+          <td id="cel53" ></td>
+          <td id="cel54" ></td>
+          <td id="cel55" ></td>
+          <td id="cel56" ></td>
+          <td id="cel57" ></td>
+          <td id="cel58" ></td>
+          <td id="cel59" ></td>
+          <td id="cel60" ></td>
+        </tr>
+        <tr class="celulas" align="center">
+          <td id="cel61" ></td>
+          <td id="cel62" ></td>
+          <td id="cel63" ></td>
+          <td id="cel64" ></td>
+          <td id="cel65" ></td>
+          <td id="cel66" ></td>
+          <td id="cel67" ></td>
+          <td id="cel68" ></td>
+          <td id="cel69" ></td>
+          <td id="cel70" ></td>
+        </tr>
+        <tr class="celulas" align="center">
+          <td id="cel71" ></td>
+          <td id="cel72" ></td>
+          <td id="cel73" ></td>
+          <td id="cel74" ></td>
+          <td id="cel75" ></td>
+          <td id="cel76" ></td>
+          <td id="cel77" ></td>
+          <td id="cel78" ></td>
+          <td id="cel79" ></td>
+          <td id="cel80" ></td>
+          </tr>
+        <tr class="celulas" align="center">
+          <td id="cel81"></td>
+          <td id="cel82"></td>
+          <td id="cel83"></td>
+          <td id="cel84"></td>
+          <td id="cel85"></td>
+          <td id="cel86"><img class="hole" width=80px src="./Images/black-hole.png"></td>
+          <td id="cel87"></td>
+          <td id="cel88"></td>
+          <td id="cel89"></td>
+          <td id="cel90"></td>
+        </tr>
+        <tr class="celulas" align="center">
+          <td id="cel91"></td>
+          <td id="cel92"></td>
+          <td id="cel93"></td>
+          <td id="cel94"></td>
+          <td id="cel95"></td>
+          <td id="cel96"></td>
+          <td id="cel97"></td>
+          <td id="cel98"></td>
+          <td id="cel99"></td>
+          <td id="cel100"></td>
+        </tr>
+       </table>
+      </td>  
+
+      <td>
+        <img class=btn4 src="./Images/dirEast.png" onclick="East();"width="50px" height="50px">
+      </td>
+
+    </tr>
+  
+      <tr>
+        <td></td>
+        <td align="center">
+          <img class=btn3 src="./Images/dirSouth.png" onclick ="South();"width="50px" height="50px">
+        </td>
+        <td></td>
+      </tr>
+  </table>  
+</body>
+</html>
+
+
+
